@@ -8,7 +8,8 @@ header {
   background: #3a434e;
 }
 
-main {
+main,
+footer {
   background: #30363f;
 }
 
@@ -77,6 +78,10 @@ h4 {
   padding-bottom: 18px;
 }
 
+p {
+  padding: 16px 0;
+}
+
 .heading-center {
   text-align: center;
   margin-bottom: 60px;
@@ -110,6 +115,10 @@ h4 {
   background: #417cc2;
 }
 
+.text-content {
+  padding: 90px 0;
+}
+
 .hero-list {
   color: #fcfcfc;
   margin: 20px;
@@ -132,4 +141,28 @@ h4 {
   margin: 10px;
   padding: 50px;
   box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  color: #fcfcfc;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 880px) {
+  .hero-img,
+  .safe-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-link {
+    display: none;
+  }
 }
